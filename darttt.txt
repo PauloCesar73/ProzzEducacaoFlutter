@@ -1,0 +1,78 @@
+//Paulo César Ribeiro da Silva
+
+//Atividade01
+
+void main(List<String> arguments) {
+  int numdobro = 19;
+
+  print("O dobro de $numdobro é ${numdobro * 2}.");
+}
+
+//--------------------------------------------------------------
+
+//Atividade02
+
+import 'dart:convert';
+import 'dart:io';
+
+import 'dart:convert';
+import 'dart:io';
+void main(List<String> arguments) {
+
+  stdout.write("Informe um numero: ");
+  double num = double.parse(stdin.readLineSync()!);
+  print("R\$ ${num.toStringAsFixed(2).replaceFirst('.', ',')}");
+}
+
+//--------------------------------------------------------------
+
+//Atividade03
+
+import 'dart:convert';
+import 'dart:io';
+void main(List<String> arguments) {
+
+  stdout.write("Informe seu numero do cartão: ");
+  int num = int.parse(stdin.readLineSync()!);
+  String num02 = num.toString();
+  print("XXXX XXXX XXXX ${num02.substring(15)}");
+}
+
+//--------------------------------------------------------------
+
+//Atividade04
+
+import 'dart:convert';
+import 'dart:io';
+void main(List<String> arguments) {
+
+  stdout.write("Digite seu nome: ");
+  String? nome = stdin.readLineSync();
+  stdout.write("Digite sua idade: ");
+  int idade = int.parse(stdin.readLineSync()!);
+  stdout.write("Digite seu numero de telefone: ");
+  int telefone = int.parse(stdin.readLineSync()!);
+  stdout.write("Quanto você recebe: ");
+  double salario = double.parse(stdin.readLineSync()!);
+
+}
+
+4 - Um cliente está fazendo uma pesquisa e precisa que os dados fiquem em uma
+formatação específica, mas dá muito trabalho ele ter que está ajustando. Para
+ajudá-lo, crie uma aplicação de cadastro, onde deve solicitar o nome, a idade, o
+telefone e quanto recebe em R$. Nota para telefone o usuário digitará um número
+com DDD da seguinte maneira 81987654321 e o valor de quanto recebe assim 945.5
+limitado a 999.99.
+Entradas:
+Fulana da Silva
+27
+81987654321
+945.5
+Saída
+=======================
+Nome: Fulana da Silva
+Idade: 27 anos
+Telefone: (81) 9 8765-4321
+Salário: R$ 945,50
+
+
