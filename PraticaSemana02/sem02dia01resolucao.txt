@@ -1,0 +1,30 @@
+//Atividade01:
+//Paulo César Ribeiro da Silva
+
+String att01 = "Paulo";
+String att02 = "César";
+String att03 = "Ribeiro";
+void main(List<String> arguments) {
+
+  print(att01 + " " + att02 + " " + att03);
+}
+//-------------------------------------
+//Atividade02:
+
+int dia = 11;
+int mes = 11;
+int ano = 2022;
+
+void main(List<String> args) {
+
+  print('$dia/$mes/$ano');
+
+}
+//-------------------------------------
+//Atividade03
+
+String cpf = "111.222.333-12";
+
+void main(List<String> args) {
+  print("###${cpf.substring(3, 8)}###-##");
+}
