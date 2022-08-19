@@ -1,4 +1,4 @@
-Lista de Exercícios:
+Lista de Exercícios
 
 1 - Escreva um programa que inicialize uma variável inteira positiva, calcule o seu
 dobro e imprima o resultado da seguinte maneira: "O dobro de X é Y." onde X é o
