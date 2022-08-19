@@ -12,7 +12,7 @@ void main(List<String> arguments) {
 //Atividade02:
 
 int dia = 11;
-int mes = 11;
+int mes = 12;
 int ano = 2022;
 
 void main(List<String> args) {
