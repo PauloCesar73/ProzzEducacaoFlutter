@@ -1,0 +1,34 @@
+Lista de Exercícios:
+
+1 - Escreva um programa que inicialize uma variável inteira positiva, calcule o seu
+dobro e imprima o resultado da seguinte maneira: "O dobro de X é Y." onde X é o
+inteiro positivo e Y é o dobro desse valor. Nota: Usar interpolação para criar o texto.
+2 - Receba um número (não texto) positivo qualquer (limitado a 999.99) e imprima em
+R$, exemplo: R$ 24,00.
+
+3 - Crie um programa que receba um número de cartão de crédito (como inteiro) e
+imprima ele da seguinte forma: XXXX XXXX XXXX 4920.
+
+Exemplo:
+Entradas
+1234567812344920
+Saída
+XXXX XXXX XXXX 4920
+
+4 - Um cliente está fazendo uma pesquisa e precisa que os dados fiquem em uma
+formatação específica, mas dá muito trabalho ele ter que está ajustando. Para
+ajudá-lo, crie uma aplicação de cadastro, onde deve solicitar o nome, a idade, o
+telefone e quanto recebe em R$. Nota para telefone o usuário digitará um número
+com DDD da seguinte maneira 81987654321 e o valor de quanto recebe assim 945.5
+limitado a 999.99.
+
+Entradas:
+Fulana da Silva
+27
+81987654321
+945.5
+Saída
+Nome: Fulana da Silva
+Idade: 27 anos
+Telefone: (81) 9 8765-4321
+Salário: R$ 945,50
