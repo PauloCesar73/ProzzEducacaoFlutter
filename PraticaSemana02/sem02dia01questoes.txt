@@ -3,6 +3,7 @@ Lista de Exercícios:
 1 - Crie um programa que inicialize três variáveis cujo tipo represente um texto e
 imprima elas na mesma frase deixando sempre um espaço entre elas (use
 concatenação).
+
 Exemplo:
 Entradas
 Ana
