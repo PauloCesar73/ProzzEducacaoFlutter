@@ -229,6 +229,20 @@ void main(List<String> args) {
 
 //Exercício12
 
+import 'dart:convert';
+import 'dart:io';
+void main(List<String> args) {
+    print("Descubra os Pares");
+  stdout.write('Informe um número que quer calcular o fatorial: ');
+  int num = int.parse(stdin.readLineSync()!);
+  int num02 = 0;
+
+  for (int i = num = 1; i <= 1; i--) {
+    
+  }
+  
+} 
+
 
 
 
