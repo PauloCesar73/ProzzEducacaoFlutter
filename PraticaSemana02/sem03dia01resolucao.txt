@@ -245,6 +245,32 @@ void main(List<String> args) {
 
 //Exercício13
 
+import 'dart:convert';
+import 'dart:io';
+
+void main(List<String> arguments) {
+  int idade = 0;
+  int Maioridade = 0;
+  int Menoridade = 0;
+  while (true) {
+    stdout.write("Informe a idade da pessoa: ");
+    idade = int.parse(stdin.readLineSync()!);
+
+    if (idade > 0 && idade < 18) {
+      Menoridade += 1;
+    }else if (idade >= 18){
+      Maioridade += 1;
+    }else if (idade == -1){
+      break;
+    }else{
+      print("Digite uma idade maior que 0!");
+      continue;
+    }
+  }
+  print("TOTAL MAIOR DE IDADE: $Maioridade");
+  print("TOTAL MENOR DE IDADE: $Menoridade");
+}
+
 //------------------------------------------------------------------------------------------------
 
 //Exercício14
