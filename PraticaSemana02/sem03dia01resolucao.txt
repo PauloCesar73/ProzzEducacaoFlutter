@@ -241,6 +241,55 @@ void main(List<String> args) {
   
 } 
 
+//------------------------------------------------------------------------------------------------
+
+//Exercício13
+
+//------------------------------------------------------------------------------------------------
+
+//Exercício14
+
+import 'dart:convert';
+import 'dart:io';
+
+void main(List<String> arguments) {
+  print("CALCULADORA EM DART");
+  while (true) {
+    print("1 - Somar \n2 - Subtrair \n3 - Multiplicar \n4 - Dividir \n5 - Resto \n0 - Sair");   
+    stdout.write("Escolha uma opção: ");
+    int calculo = int.parse(stdin.readLineSync()!);
+    
+    if (calculo == 0) {
+      print("Encerrando programa!");
+      break;
+    }else if(calculo > 5 || calculo < 0){
+      print("Opção desconhecida!");
+      continue;
+    }else{
+    stdout.write("Agora informe o primeiro número: ");
+    double calculo01 = double.parse(stdin.readLineSync()!);
+    stdout.write("Agora informe o segundo número: ");
+    double calculo02 = double.parse(stdin.readLineSync()!);
+    if (calculo == 1) {
+      double result = calculo01 + calculo02;
+      print("$calculo01 + $calculo02 = $result");
+    }else if (calculo == 2) {
+      double result = calculo01 - calculo02;
+      print("$calculo01 - $calculo02 = $result");
+    }else if (calculo == 3) {
+      double result = calculo01 * calculo02;
+      print("$calculo01 x $calculo02 = $result");
+    }else if (calculo == 4) {
+      double result = calculo01 / calculo02;
+      print("$calculo01 / $calculo02 = $result");
+    }else if (calculo == 5) {
+      double result = calculo01 % calculo02;
+      print("Sobra entre $calculo01 e $calculo02 é $result");
+    }
+    }
+  }
+}
+
 
 
 
