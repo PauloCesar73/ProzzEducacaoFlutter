@@ -230,16 +230,19 @@ void main(List<String> args) {
 
 import 'dart:convert';
 import 'dart:io';
-void main(List<String> args) {
+
+void main(List<String> arguments) {
   stdout.write('Informe um número que quer calcular o fatorial: ');
   int num = int.parse(stdin.readLineSync()!);
-  int num02 = 0;
-
-  for (int i = num = 1; i <= 1; i--) {
-    
+  int result = 1;
+  List<int> printar = [];
+  for (int i = num; i >= 1; i--) {
+    printar.add(i);
+    result *= i; 
   }
-  
-} 
+  String printt = printar.toString();
+  stdout.writeAll(printar, " x "); print(" = $result");
+}
 
 //------------------------------------------------------------------------------------------------
 
