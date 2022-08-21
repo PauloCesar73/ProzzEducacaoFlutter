@@ -213,7 +213,6 @@ void main(List<String> args) {
 import 'dart:convert';
 import 'dart:io';
 void main(List<String> args) {
-  print("Descubra os Pares");
   stdout.write('Informe o total de alunos: ');
   int num = int.parse(stdin.readLineSync()!);
   double notas = 0;
@@ -232,7 +231,6 @@ void main(List<String> args) {
 import 'dart:convert';
 import 'dart:io';
 void main(List<String> args) {
-    print("Descubra os Pares");
   stdout.write('Informe um número que quer calcular o fatorial: ');
   int num = int.parse(stdin.readLineSync()!);
   int num02 = 0;
