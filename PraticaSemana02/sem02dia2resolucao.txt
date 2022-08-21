@@ -1,0 +1,64 @@
+//Paulo César Ribeiro da Silva
+
+//Atividade01
+
+void main(List<String> arguments) {
+  int numdobro = 19;
+
+  print("O dobro de $numdobro é ${numdobro * 2}.");
+}
+
+//--------------------------------------------------------------
+
+//Atividade02
+
+import 'dart:convert';
+import 'dart:io';
+
+import 'dart:convert';
+import 'dart:io';
+void main(List<String> arguments) {
+
+  stdout.write("Informe um numero: ");
+  double num = double.parse(stdin.readLineSync()!);
+  print("R\$ ${num.toStringAsFixed(2).replaceFirst('.', ',')}");
+}
+
+//--------------------------------------------------------------
+
+//Atividade03
+
+import 'dart:convert';
+import 'dart:io';
+void main(List<String> arguments) {
+
+  stdout.write("Informe seu numero do cartão: ");
+  int num = int.parse(stdin.readLineSync()!);
+  String num02 = num.toString();
+  print("XXXX XXXX XXXX ${num02.substring(15)}");
+}
+
+//--------------------------------------------------------------
+
+//Atividade04
+
+import 'dart:convert';
+import 'dart:io';
+void main(List<String> arguments) {
+
+  stdout.write("Digite seu nome: ");
+  String? nome = stdin.readLineSync();
+  stdout.write("Digite sua idade: ");
+  int idade = int.parse(stdin.readLineSync()!);
+  stdout.write("Digite seu numero de telefone: ");
+  int telefone = int.parse(stdin.readLineSync()!);
+  String telefonee = telefone.toString();
+  stdout.write("Quanto você recebe: ");
+  double salario = double.parse(stdin.readLineSync()!);
+
+  print("Nome: $nome.");
+  print("Idade: $idade anos.");
+  print("Telefone: (${telefonee.substring(0, 2)}) ${telefonee.substring(2, 3)} ${telefonee.substring(3, 7)}-${telefonee.substring(7)}");
+  print("Salário: R\$ ${salario.toStringAsFixed(2).replaceFirst('.', ',')}");
+
+}
