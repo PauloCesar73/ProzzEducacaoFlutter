@@ -1,0 +1,72 @@
+Lista de Exercícios
+
+1 - Devido a uma frente fria, as pessoas ficaram curiosas sobre a
+temperatura e justamente surgiu a necessidade de comparar a temperatura de
+diferentes regiões no mundo. Mas nem todos usam a mesma escala, sendo
+assim crie um programa que converta a medida de uma temperatura de
+Fahrenheint para Celsius (limite a saída em duas casas decimais).
+
+2 - Receba um nome completo e dê boas vindas citando apenas o primeiro
+nome dele.
+
+3 - Em um dado sistema de E-Commerce foi solicitado uma funcionalidade
+para pesquisar produtos por tags, a fim de facilitar que os usuários
+encontrem o que procuram. Na tela de visualização do produto vamos exibir
+as tags de forma separada. Para início você deve permitir que seja
+possível cadastrar as tags, elas serão cadastradas juntas estando
+separadas por vírgula(,). Para garantir que foi tudo okay, exiba o total
+de tags informadas.
+Exemplo:
+4 - Crie um programa que receba a idade do usuário e diga se ele é de
+maior ou não.
+
+5 - O estudante Carlos está querendo saber se ele foi aprovado ou não.
+Sabendo que a nota necessária para ser aprovado é que seja maior ou igual
+a 7, crie um programa onde Carlos pode colocar uma nota e o programa exiba
+se foi Aprovado ou Reprovado.(Use operador ternário).
+
+6 - Um atendente precisa tem um sistema que traz o valores dos produtos,
+ele está precisando saber sempre qual o valor mais caro entre dois
+produtos. Para prototipar a solução crie um programa que receba dois
+valores e exiba o valor do mais caro. Nota: O valor deve sair formatado
+como R$ XXX,XX. O Valor de entrada é no máximo 999.99 e o mínimo 0.01.
+
+7 - Sabendo-se que os níveis considerados normais de glicose no organismo
+variam de 70 a 110 mg/dl, desenvolva um programa que receba o valor do
+nível de glicose no sangue de uma pessoa e classifique em: Hipoglicemia
+(quando menor que 70), Normal (quando menor ou igual a 110, mas superior
+ou igual a 70) e Hiperglicemia (quando superior a 110).
+
+8 - Crie um programa que receba o número do mês (1 à 12) e imprima o nome
+do mês (Nota: caso o número informado esteja fora do intervalo, exiba a
+mensagem “Mês desconhecido”).
+
+9 - Maria está querendo ir para praia, mas a mãe disse que ela só vai com
+as seguintes condições: Se tiver protetor solar, for fim de semana e não
+estiver chovendo. Faça um programa que ajude a Maria a descobrir se ela
+irá à praia ou não.
+
+10 - Crie um programa que receba um número inteiro positivo, e mostre
+todos os números pares antes dele.
+
+11 - Uma escola precisa calcular a média das notas de várias turmas, no
+entanto cada uma tem uma quantidade diferente de alunos. Crie um programa
+onde se informe o total de alunos e depois solicite as notas de cada
+aluno. No final, exiba a média da turma.
+
+12 - O fatorial de um número inteiro e positivo “n”, representado por “n!”
+(lê-se:n fatorial) é obtido a partir da multiplicação de todos os seus
+antecessores até o número um, cuja expressão genérica é n! = n * (n – 1) *
+(n – 2) * (n – 3)... 2,1. Crie um programa que receba um número inteiro
+positivo e imprima a sequência de valores com seu resultado.
+
+13 - Faça um programa que receba a idade de N pessoas, caso a pessoa
+queira informar que terminou ela digitará -1 e o programa informará o
+total de pessoas com idade superior ou igual a 18, e o total de pessoas
+com idade inferior a 18.
+
+14 - Faça um programa que simule uma calculadora, tendo as seguintes
+operações: Soma, Subtração, Multiplicação, Divisão e Resto. O usuário
+poderá informar qual operação quer fazer e após isso digitará dois números
+positivos. O programa deverá exibir o resultado conforme a operação
+selecionada. Para sair da calculadora o usuário deve digitar 0.
