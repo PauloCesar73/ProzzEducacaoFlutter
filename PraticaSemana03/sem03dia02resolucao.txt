@@ -1,0 +1,6 @@
+Funções:
+
+As funções em programação com idéias basicas são de emcapsular um trecho de código que poderá ser chamado em
+outro trecho no programa. A vantagem de usar funções é o reaproveitamento de códigos evitando que o mesmo
+trecho seja repetido dentro de um programa várias vezes e também ajuda na organização para melhor mantimento
+e atualização.
