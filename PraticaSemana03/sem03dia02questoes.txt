@@ -1,0 +1,6 @@
+Pesquisa: "FUNÇÕES"
+
+Como falado, dessa vez a pesquisa tem alguns requisitos que são:
+    - Não pode ser copia direta de nenhum site;
+    - Deve conter pelo menos um exemplo de código;
+    - O relatório deve ser com suas palavras.
