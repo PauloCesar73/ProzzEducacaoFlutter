@@ -1,0 +1,82 @@
+import 'dart:convert';
+import 'dart:ffi';
+import 'dart:io';
+
+void exercicio01(){
+    List<String> nomes = [];
+  while (true) {
+    stdout.write("Informe o nome:");
+    String nome = stdin.readLineSync()!;
+    nomes.add(nome);
+    stdout.write("Deseja cadastrar um novo nome? (s/n): ");
+    String option = stdin.readLineSync()!;
+    if (option.toLowerCase() == "n") {
+      break;
+    }
+  }
+  nomes.sort((a, b) => a.compareTo(b));
+  print(nomes);
+}
+
+void exercicio02(){
+  List<int> num01 = [1, 2, 3, 4, 5];
+  List<int> num02 = [6, 7, 8, 9, 10];
+
+  num01.addAll(num02);
+  print(num01);
+}
+
+void exercicio03(){
+  List<String> nomes = [];
+  while (true) {
+    stdout.write("Informe o nome:");
+    String nome = stdin.readLineSync()!;
+    nomes.add(nome);
+    stdout.write("Deseja cadastrar um novo nome? (s/n): ");
+    String option = stdin.readLineSync()!;
+    if (option.toLowerCase() == "n") {
+      break;
+    }
+  }
+  print(nomes.where((element) => element.toLowerCase().startsWith("t")));
+}
+
+void exercicio04(){
+  List<int> num = [5, 4, 10, 13, 2, 7];
+
+  print(num.where((a) => a % 2 == 1 ));
+}
+
+void exercicio05(){
+  List<Map<String, dynamic>> contatos = [];
+  while (true) {
+    print("1 - Novo contato \n2 - Para remover um contato\n3 - Para mostrar contatos\n0 - Para encerrar programa");
+    stdout.write("");
+    int option = int.parse(stdin.readLineSync()!);
+    if (option == 1) {
+    stdout.write("Informe o nome:");
+    String nome = stdin.readLineSync()!;
+    stdout.write("Informe o telefone:");
+    String telefone = stdin.readLineSync()!;
+    var novoContato = {"id": contatos.length + 1, "nome": nome, "telefone": telefone};
+    contatos.add(novoContato);
+    } else if(option == 2){
+    stdout.write("Qual contato deseja apagar? ");
+    int option2 = int.parse(stdin.readLineSync()!);
+    contatos.removeWhere((element) => element["id"] == option2);
+  }else if(option == 3){
+    print(contatos);
+  }else if (option == 0){
+    print("Contatos ficaram: $contatos ");
+    break;
+  }
+}
+}
+void exercicio06(){
+  void numeros(){
+    
+  }
+}
+void exercicio07(){
+
+}
