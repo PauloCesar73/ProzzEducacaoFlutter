@@ -1,0 +1,25 @@
+Programação orientada a objetos.
+
+A programação orientada a objetos é um paradigma de programação onde diversas classes possuem 
+características que definem um objeto da vida real, que podem ter atributos e métodos.
+Existem 4 pilares na programação orientada a objetos que são eles a abstração, encapsulamento,
+herança e polimorfismo. E existem várias vantagens para ser utilizada, é confiável, oportuno,
+extensível, reutilizavel e natural.
+
+Exemplo de código:
+
+class Moto {
+     string marca;
+     string modelo;
+     int ano;
+
+     public Moto() {
+
+     }
+
+     public Moto(string marca, string modelo, int ano) {
+         this.marca = marca;
+         this.modelo = modelo;
+         this.ano = ano;
+     }
+ }
