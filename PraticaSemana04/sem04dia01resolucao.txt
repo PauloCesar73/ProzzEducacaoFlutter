@@ -1,0 +1,212 @@
+import 'dart:convert';
+import 'dart:io';
+
+void exercicio01(){
+    List<String> nomes = [];
+  while (true) {
+    stdout.write("Informe o nome:");
+    String nome = stdin.readLineSync()!;
+    nomes.add(nome);
+    stdout.write("Deseja cadastrar um novo nome? (s/n): ");
+    String option = stdin.readLineSync()!;
+    if (option.toLowerCase() == "n") {
+      break;
+    }
+  }
+  nomes.sort((a, b) => a.compareTo(b));
+  print(nomes);
+}
+
+void exercicio02(){
+  List<int> num01 = [1, 2, 3, 4, 5];
+  List<int> num02 = [6, 7, 8, 9, 10];
+
+  num01.addAll(num02);
+  print(num01);
+}
+
+void exercicio03(){
+  List<String> nomes = [];
+  while (true) {
+    stdout.write("Informe o nome:");
+    String nome = stdin.readLineSync()!;
+    nomes.add(nome);
+    stdout.write("Deseja cadastrar um novo nome? (s/n): ");
+    String option = stdin.readLineSync()!;
+    if (option.toLowerCase() == "n") {
+      break;
+    }
+  }
+  print(nomes.where((element) => element.toLowerCase().startsWith("t")));
+}
+
+void exercicio04(){
+  List<int> num = [5, 4, 10, 13, 2, 7];
+
+  print(num.where((a) => a % 2 == 1 ));
+}
+
+void exercicio05(){
+  List<Map<String, dynamic>> contatos = [];
+  while (true) {
+    print("1 - Novo contato \n2 - Para remover um contato\n3 - Para mostrar contatos\n0 - Para encerrar programa");
+    stdout.write("");
+    int option = int.parse(stdin.readLineSync()!);
+    if (option == 1) {
+    stdout.write("Informe o nome:");
+    String nome = stdin.readLineSync()!;
+    stdout.write("Informe o telefone:");
+    String telefone = stdin.readLineSync()!;
+    var novoContato = {"id": contatos.length + 1, "nome": nome, "telefone": telefone};
+    contatos.add(novoContato);
+    } else if(option == 2){
+    stdout.write("Qual contato deseja apagar? ");
+    int option2 = int.parse(stdin.readLineSync()!);
+    contatos.removeWhere((element) => element["id"] == option2);
+  }else if(option == 3){
+    print(contatos);
+  }else if (option == 0){
+    print("Contatos ficaram: $contatos ");
+    break;
+  }
+}
+}
+
+void exercicio06(){
+  List<int> listaa = [300, 50, 37, 112, 10];
+    
+  var nummenor = listaa.reduce(
+  (antes, depois) => antes < depois ? antes : depois); 
+
+  print("Menor numero: $nummenor ");
+}
+
+void exercicio07(){
+  String nome = 'Biu';
+  double saldo = 500000;
+  while (true) {
+    print('Oque deseja $nome.');
+    print("1 - Sacar \n2 - Depositar\n3 - Ver saldo\n0 - Sair");
+    stdout.write("");
+    int option = int.parse(stdin.readLineSync()!);
+    if (option == 1) {
+    stdout.write("Quanto deseja sacar? ");
+    double saque = double.parse(stdin.readLineSync()!);
+    saldo = saldo - saque;
+    } else if(option == 2){
+    stdout.write("Quanto deseja depositar? ");
+    double depositar= double.parse(stdin.readLineSync()!);
+    saldo = depositar + saldo;
+  }else if(option == 3){
+    print("Saldo atual $saldo");
+  }else if (option == 0){
+    break;
+  }else{
+    print('Opção invalida, escolha novamente.');
+    continue;
+  }
+}
+}
+
+void exercicio08(){
+  stdout.write("Escolha um numero ");
+  int num = int.parse(stdin.readLineSync()!);
+  fatorial(num){
+  if(num<=1)
+    return 1;
+  return num*fatorial(num-1);
+}
+print(fatorial(num));
+}
+
+void exercicio09(){
+    stdout.write("Digite uma frase: ");
+    String frase = (stdin.readLineSync()!);
+    revertendo(frase) {
+    String novafrase = "";
+    for (var i = frase.length - 1; i >= 0; i--) { 
+        novafrase += frase[i];
+    }
+    return novafrase; 
+}
+print(revertendo(frase));
+}
+void exercicio10(){
+  stdout.write("Escolha um numero ");
+  int num = int.parse(stdin.readLineSync()!);
+  fibonacci(num) {
+  
+  if (num == 0) {
+    return(0);
+  }else if (num == 1) {
+    return(1);
+  }else{
+    return fibonacci(num-1) + fibonacci(num-2);
+  }
+}
+print(fibonacci(num));
+}
+void exercicio11(){
+    double conta = 0;
+  while (true) {
+    print("Temos os sabores:\n1 - Margherita por R\$5.5\n2 - Mussarela por R\$8.5\n3 - Portuguesa por R\$13");
+    stdout.write("Qual sabor deseja? ");
+    int sabores = int.parse((stdin.readLineSync()!));
+      if (sabores == 1) {
+        stdout.write("Mais um sabor?(Informe o numero do sabor), Não? digite 4: ");
+        int sabores = int.parse((stdin.readLineSync()!));
+        if (sabores == 2) {
+          conta = 5.5 + 8.5;
+        } else if (sabores == 3){
+          conta = 5.5 + 13;
+        } else if (sabores == 4){
+          conta = 5.5;
+        } else {
+          print("Não pode o mesmo sabor/Digitou uma opção invalida");
+          continue;
+        }
+        }else if (sabores == 2){
+          stdout.write("Mais um sabor?(Informe o numero do sabor), Não? digite 4: ");
+          int sabores = int.parse((stdin.readLineSync()!));
+          if (sabores == 1) {
+            conta = 5.5 + 8.5;
+          } else if (sabores == 3){
+            conta = 8.5 + 13;
+          } else if (sabores == 4){
+            conta = 8.5;
+          } else {
+            print("Não pode o mesmo sabor/Digitou uma opção invalida");
+            continue;
+          } 
+        }else if (sabores == 3){
+          stdout.write("Mais um sabor?(Informe o numero do sabor), Não? digite 4: ");
+          int sabores = int.parse((stdin.readLineSync()!));
+          if (sabores == 1) {
+            conta = 5.5 + 13;
+          } else if (sabores == 2){
+            conta = 13 + 8.5;
+          } else if (sabores == 4){
+            conta = 13;
+          } else {
+            print("Não pode o mesmo sabor/Digitou uma opção invalida");
+            continue;
+          } 
+      }else{
+        print("Digitou uma opção invalida");
+        continue;
+    }
+    print("Valor: $conta");
+    break;
+  }
+}
+
+void exercicio12(){
+List<String> patinho = ["A mamãe patinha foi procurar", "Além das montanhas", "Na beira do mar", "A mamãe gritou: Quá, quá, quá, quá", "E os 5 patinhos voltaram de lá"];
+  for (var i = 5; i > 0; i--) {print("${i == 1 ? "$i patinho foi" : "$i patinhos foram"} passear");
+    print("Além das montanhas");
+    print("Para brincar");
+    print("A mamãe gritou: Quá, quá, quá, quá");
+    print("Mas ${i == 1 ? "nenhum patinho voltou" : i == 2 ? "1 patinho voltou" : "só ${i - 1} patinhos voltaram"} de lá");
+    print("");}
+    for (var i = 0; i < 5; i++) {print(patinho[i]);}
+}
