@@ -1,0 +1,83 @@
+Lista de Exercícios
+
+1 - Crie uma aplicação que receba N nomes e após isso exiba uma lista com
+os nomes em ordem alfabética de a-Z.
+
+2 - Crie uma programa que declare duas listas de números inteiros, junte
+elas em uma só e imprima o conteúdo da união.
+
+3 - Crie uma aplicação que receba N nomes e exiba todos os nomes que
+começam com a letra T.
+
+4 - Crie uma aplicação que declara uma lista de números inteiros e exiba
+todos os números ímpares. (Não pode usar nenhum laço de repetição).
+
+5 - Crie uma aplicação de agenda de contato, cada contato conterá Nome e
+Telefone. O programa deve permitir:
+- Cadastrar N contatos;
+- Exibir todos contatos cadastrados (ID, Nome e Telefone);
+- Remover contato da lista por ID.
+
+6 - Crie um programa que tenha uma função que recebe lista com N números
+inteiro e retorne o menor número da lista. (não usar laço de repetição)
+
+7 - Simule um caixa eletrônico, onde está definido o nome e o saldo do
+cliente. A aplicação deve apresentar um menu com as seguintes opções:
+Sacar, Depositar, Ver Saldo e Sair. Cada opção deve ter uma função para
+implementar.
+
+8 - Crie um programa que receba um número inteiro positivo e imprima o
+resultado do fatorial desse número (Nota: Use função recursiva para obter
+o resultado).
+
+9 - Crie uma função que receba uma variável do tipo String e retorne o
+texto invertido. (Observação, use “For” para isso, é proibido usar
+reversed).
+
+10 - Crie um programa que tenha uma função que faça o cálculo de
+Fibonacci. O programa deve receber um número inteiro, passar esse valor
+para função que usará para saber o total de números que ele vai mostrar.
+(Nota a função deve ser recursiva).
+
+11 - Crie uma aplicação para uma pizzaria onde o usuário informa os
+sabores que ele quer (o usuário pode escolher até 2 e não pode ser igual),
+e após concluir o pedido o programa informa o total a pagar.
+As Pizzas:
+[
+{“margherita”: 5.5},
+{“mussarela”: 8.5},
+{“portuguesa”: 13}
+]
+
+12 - Crie uma função que exiba a seguinte música com o menor número de
+linhas que você conseguir:
+5 patinhos foram passear
+Além das montanhas
+Para brincar
+A mamãe gritou: Quá, quá, quá, quá
+Mas só 4 patinhos voltaram de lá
+4 patinhos foram passear
+Além das montanhas
+Para brincar
+A mamãe gritou: Quá, quá, quá, quá
+Mas só 3 patinhos voltaram de lá
+3 patinhos foram passear
+Além das montanhas
+Para brincar
+A mamãe gritou: Quá, quá, quá, quá
+Mas só 2 patinhos voltaram de lá
+2 patinhos foram passear
+Além das montanhas
+Para brincar
+A mamãe gritou: Quá, quá, quá, quá
+Mas só 1 patinho voltou de lá
+1 patinho foi passear
+Além das montanhas
+Para brincar
+A mamãe gritou: Quá, quá, quá, quá
+Mas nenhum patinho voltou de lá
+A mamãe patinha foi procurar
+Além das montanhas
+Na beira do mar
+A mamãe gritou: Quá, quá, quá, quá
+E os 5 patinhos voltaram de lá
