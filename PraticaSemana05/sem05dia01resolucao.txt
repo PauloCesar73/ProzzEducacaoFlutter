@@ -1,0 +1,217 @@
+import 'dart:convert';
+import 'dart:io';
+
+//Exercicio01
+
+  class Retangulo {
+  double base;
+  double altura;
+
+  Retangulo(this.base, this.altura);
+
+  double calculararea(base, altura) {
+    return base * altura;
+  }
+
+  void quadrado() {
+    if (base == altura) {
+      print("Quadrado");
+    } else {
+      print("Retângulo");
+    }
+  }
+}
+void exercicio01(){
+  Retangulo arearetangle = Retangulo(0, 0);
+  stdout.write("Informe a base do retângulo: ");
+  arearetangle.base = double.parse(stdin.readLineSync()!);
+  stdout.write("Informe a altura do retângulo: ");
+  arearetangle.altura = double.parse(stdin.readLineSync()!);
+  print("Área: ${arearetangle.calculararea(arearetangle.base, arearetangle.altura)}");
+  arearetangle.quadrado();
+}
+
+//Exercício02
+
+  class Pessoa {
+  String name;
+  Pessoa? pai;
+  Pessoa? mae;
+
+  Pessoa({required this.name, this.pai, this.mae});
+
+  bool mesmapessoa(Pessoa outro) {
+    if (mae != null && outro.mae != null) {
+      return name == outro.name && mae!.name == outro.mae!.name;
+    }
+    return false;
+  }
+
+  bool irmaos(Pessoa outro) {
+    if (mae != null && outro.mae != null || pai != null && outro.pai != null) {
+      return pai == outro.pai || mae!.name == outro.mae!.name;
+    }
+    return false;
+  }
+
+  bool epai(Pessoa outro) {
+    if (outro.pai != null) {
+      return name == outro.pai!.name;
+    }
+    return false;
+  }
+
+  bool emae(Pessoa outro) {
+    if (outro.mae != null) {
+      return name ==  outro.mae!.name;
+    }
+    return false;
+  }
+}
+
+void exercicio02() {
+  final joao = Pessoa(name: "João");
+  final maria = Pessoa(name: "Maria");
+  final fernanda = Pessoa(name: "Fernanda", pai: joao, mae: maria);
+  final carlos = Pessoa(name: "Carlos", pai: joao, mae: maria);
+  final eduardo = Pessoa(name: "Eduardo");
+
+  print("${fernanda.name} e ${carlos.name} são a mesma pessoa?: ${fernanda.mesmapessoa(carlos)}");
+
+  print("${fernanda.name} e ${carlos.name} são irmãos?: ${fernanda.irmaos(carlos)}");
+
+  print("${joao.name} é pai de ${carlos.name}?: ${joao.epai(carlos)}");
+
+  print("${maria.name} é mãe de ${carlos.name}?: ${maria.emae(carlos)}");
+
+  print("${fernanda.name} e ${eduardo.name} são irmãos?: ${fernanda.irmaos(eduardo)}");
+}
+
+//Exercício03
+
+abstract class Animal {
+  int maxlife;
+  String type;
+
+  Animal(this.maxlife, this.type);
+  void typee(Animal typ){
+    if (typ.type != type) {
+      print("Não é o mesmo tipo");
+    }else{
+      print("É o mesmo tipo");
+    }
+  }
+
+  void sound(){
+  print("Fez som");
+  }
+
+  void fly(){
+  print("Voei");
+  }
+
+}
+
+class Cachorro extends Animal {
+  Cachorro(super.maxlife, super.type);
+
+  @override
+  void sound(){
+    print("Auau");
+  }
+}
+
+class Gato extends Animal {
+  Gato(super.maxlife, super.type);
+
+  @override
+  void sound(){
+    print("Miau");
+  }
+}
+
+class Passaro extends Animal {
+  Passaro(super.maxlife, super.type);
+
+  @override
+  void sound(){
+    print("Piupiu");
+  }
+}
+
+class Gafanhoto extends Animal {
+  Gafanhoto(super.maxlife, super.type);
+
+  @override
+  void sound(){
+    print("Canto");
+  }
+
+  void jump(){
+    print("Pulou");
+  }
+}
+
+class Papagaio extends Animal {
+  Papagaio(super.maxlife, super.type);
+
+  @override
+  void sound(){
+    print("Imitando");
+  }
+}
+
+
+void exercicio03() {
+
+  Cachorro dog = Cachorro(19, "cachorro");
+  Gato gato = Gato(17, "gato");
+  Passaro passaro = Passaro(10, "passaro");
+  Gafanhoto insect = Gafanhoto(2, "gafanhoto");
+  Papagaio papagaioo = Papagaio(60, "papagaio");
+
+while (true) {
+  print("1 Para ver animais\n2 Para cadastrar novo animal\nNenhuma opção (Encerrar)");
+  stdout.write("Opção: ");
+  int continuar = int.parse(stdin.readLineSync()!);
+  if (continuar == 1) {
+    print(dog.type);
+    dog.sound();
+    dog.typee(gato);
+    print("");
+    print(gato.type);
+    gato.sound();
+    gato.typee(dog);
+    print("");
+    print(passaro.type);
+    passaro.sound();
+    passaro.fly();
+    passaro.typee(insect);
+    print("");
+    print(insect.type);
+    insect.sound();
+    insect.jump();
+    insect.fly();
+    insect.typee(papagaioo);
+    print("");
+    print(papagaioo.type);
+    papagaioo.sound();
+    papagaioo.fly();
+    papagaioo.typee(papagaioo);
+    print("");
+    continue;
+  }else if (continuar == 2){
+    stdout.write("Informe o animal: ");
+    String animal = stdin.readLineSync()!;
+      if (animal != dog.type && animal != gato.type && animal != passaro.type && animal != insect.type && animal != papagaioo.type) {
+      print("Não pode cadastrar\n");
+      continue;
+    } else {
+    print("Animal cadastrado!\n");
+    continue;
+    }
+  }else{
+    break;
+  }
+  }
+}
