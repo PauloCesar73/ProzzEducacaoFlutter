@@ -1,0 +1,81 @@
+abstract class Areaa {
+  String frase;
+  double base;
+  double altura;
+
+  Areaa(this.base, this.altura, this.frase);
+
+  double calculararea(base, altura) {
+    return base * altura;
+  }
+
+  void tipo() {
+    if (base == altura) {
+      print("Quadricular");
+    } else {
+      print("Retângular");
+    }
+  }
+
+  String frasee(frase){
+    return frase;
+  }
+}
+
+class Casa extends Areaa {
+   Casa(super.frase, super.base, super.altura);
+
+   void abrirporta(){
+     print("Abriu");
+   }
+
+   void fecharporta(){
+     print("Fechou");
+   }
+
+   void desligarluz(){
+     print("Ligou");
+   }
+
+}
+
+abstract class Animal {
+  String name;
+  int maxlife;
+  String type;
+
+  Animal(this.maxlife, this.type, this.name);
+  void typee(Animal typ){
+    if (typ.type != type) {
+      print("Não é o mesmo tipo");
+    }else{
+      print("É o mesmo tipo");
+    }
+  }
+
+  void sound(){
+  print("Fez som");
+  }
+
+  void fly(){
+  print("Voei");
+  }
+
+}
+
+class Gafanhoto extends Animal {
+  Gafanhoto(super.maxlife, super.type, super.name);
+
+  @override
+  void sound(){
+    print("Canto");
+  }
+
+  void jump(){
+    print("Pulou");
+  }
+
+  void sleep(){
+    print("Dormiu");
+  }
+}
