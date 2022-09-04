@@ -1,0 +1,32 @@
+class Cachorro{
+  late String som;
+  String sound(){
+    return som.toLowerCase();
+  }
+}
+class Nomecompleto{
+late String name;
+
+String onename(){
+  return name.split(' ')[0];
+}
+}
+class Frase{
+  late String revertendo;
+
+  String revertendoo(){
+    return revertendo.split('').reversed.join();
+  }
+}
+
+  void main(List<String> args) {
+  Nomecompleto nomee = Nomecompleto();
+  nomee.name = "Biu Leao Junior";
+  Cachorro dog = Cachorro();
+  dog.som = "AUAU";
+  Frase frasee = Frase();
+  frasee.revertendo = "Uma frase qualquer";
+  print(nomee.onename());
+  print(dog.sound());
+  print(frasee.revertendoo());
+}
