@@ -1,0 +1,20 @@
+class Moto{
+  late String marca;
+  late int _preco = 48000;
+
+  int precoo() => _preco; 
+  void sett(int marca) => _preco = marca; 
+  Moto(this.marca);
+  
+  String tostring(){
+    return (marca);
+  }
+}
+
+  void main(List<String> args) {
+  Moto kawasaki = Moto('Kawasaki');
+  print(kawasaki.tostring());
+  print(kawasaki._preco);
+  kawasaki._preco = 46500;
+  print(kawasaki._preco);
+}
