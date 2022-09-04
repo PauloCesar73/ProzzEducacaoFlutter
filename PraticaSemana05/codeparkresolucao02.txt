@@ -1,0 +1,29 @@
+  class Retangulo {
+  double base;
+  double altura;
+
+  Retangulo(this.base, this.altura);
+
+  double calculararea(base, altura) {
+    return base * altura;
+  }
+
+  void tipoo() {
+    if (base == altura) {
+      print("Quadrado");
+    } else {
+      print("Retângulo");
+    }
+  }
+}
+void areaass(){
+  Retangulo arearetangle = Retangulo(5, 6);
+  Retangulo areacasa = Retangulo(10, 20);
+  Retangulo areapredio = Retangulo(20, 20);
+  print("Área: ${areacasa.calculararea(areacasa.base, areacasa.altura)}");
+  areacasa.tipoo();
+  print("Área: ${areapredio.calculararea(areapredio.base, areapredio.altura)}");
+  areapredio.tipoo();
+  print("Área: ${arearetangle.calculararea(arearetangle.base, arearetangle.altura)}");
+  arearetangle.tipoo();
+}
