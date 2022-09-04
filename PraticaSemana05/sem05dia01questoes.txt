@@ -1,0 +1,35 @@
+ista de Exercícios
+Professor: Deyvid Jaguaribe
+1 - Crie uma classe Retângulo que atenda a seguinte especificação:
+a) Deve ter um construtor em que possa se passar o valor da base e
+altura;
+b) Deve ter um método que retorne a área desse retângulo;
+c) Deve ter um método que indique se esse Retângulo é um quadrado.
+2 - Uma empresa que tem como objetivo criar soluções para famílias que
+querem ter um planejamento de crescimento, decidiu criar uma aplicação que
+facilita-se o registro da árvore genealógica. Para isso você deve criar
+uma classe Pessoa que justamente atende esse objetivo, ela deve ter nome,
+pai e mãe (que no caso, pai e mãe também são Pessoas).
+A classe Pessoa deve atender os seguintes requisitos:
+a) Construtor: que inicialize o nome da pessoa, e na ausência de pai
+ou mãe deixe como null;
+b) Um método que verifique se é a mesma pessoa (se entende que é a
+mesma pessoa quando possui o mesmo nome e a mesma mãe);
+c) Um método que verifique se são irmãos(as) (se entende que é
+quando possuem a mesma mãe ou mesmo pai);
+d) Um método que verifique se é o pai da pessoa;
+e) Um método que verifique se é a mãe da pessoa;
+3 - Uma empresa de pesquisa sobre a fauna, decidiu criar um sistema que
+mantivesse as características dos animais. Usando classes crie os
+seguintes animais: Cachorro, Gato, Pássaro, Gafanhoto e Papagaio.
+Todos possuem a característica de Expectativa média de vida (em anos).
+Todos devem saber verificar se o outro animal é do mesmo tipo que eles.
+Todos devem ter um comportamento de mostrar sua comunicação principal.
+Não pode existir no sistema a possibilidade de criar um animal que não
+seja um desses já especificados.
+Considerações:
+● Cachorro sabe latir;
+● Gato sabe miar;
+● Pássaro sabe piar e voar;
+● Gafanhoto sabe cantar, pular e voar;
+● Gafanhoto sabe imitar e voar;
