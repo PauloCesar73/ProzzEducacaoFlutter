@@ -6,6 +6,21 @@ Existem 4 pilares na programação orientada a objetos que são eles a abstraç�
 herança e polimorfismo. E existem várias vantagens para ser utilizada, é confiável, oportuno,
 extensível, reutilizavel e natural.
 
+Pilares.
+
+Encapsulamento:
+Encapsular os dados de uma aplicação significa evitar que estes sofram acessos indevidos.
+
+Abstração:
+É a capacidade de extrair dos itens presentes no contexto suas principais características, criando dessa forma objetos.
+
+Herança:
+Ela permite que classes compartilhem atributos e métodos, através de heranças(Herdando da sua classe pai).
+
+Polimorfismo:
+É a propriedade de duas ou mais classes derivadas de uma mesma superclasse responderem a mesma mensagem, cada uma de uma forma diferente.
+
+
 Exemplo de código:
 
 class Moto {
